@@ -1,0 +1,21 @@
+# You can use this as a starting point for your custom .gitignore
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules
+
+# npm cache directory
+.npm
+
+package-lock.json
+yarn.lock

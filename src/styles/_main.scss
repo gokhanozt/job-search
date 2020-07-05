@@ -1,0 +1,208 @@
+//main
+html, body{
+    margin: 0;
+  }
+  body{
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    background-color: $bg-lightGray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  h4,h3{
+    font-weight: normal !important;
+  }
+  .container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @include responsive_desktop(){
+      max-width: 1089px !important;
+    }
+    @include responsive_middle(){
+      max-width: 940px;
+    }
+    @include responsive_tablet(){
+      max-width: 720px;
+    }
+    @include responsive_mobile(){
+      max-width: 86.7%;
+    }
+    .row{
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+  }
+  .separator{
+    height: 85px;
+    @include responsive_mobile(){
+      height: 56px;
+    }
+    &.large{
+      height: 112px;
+    }
+  }
+  .section-smallBanner{
+    @include responsive_mobile(){
+      height: 30.72vh;
+    }
+    .banner-wrapper{
+      @include responsive_mobile(){
+       padding-top: 160px !important;
+      }
+    }
+    .text{
+      @include responsive_mobile(){
+        width: 100% !important;
+        text-align: center !important;
+      }
+    }
+  
+  }
+  .ex-title{
+    @include responsive_mobile(){
+      border-left: none !important;
+      margin-left: 0 !important;
+      font-size: 13px;
+      display: block;
+      padding-left: 0 !important;
+      padding-bottom: 10px !important;
+    }
+  
+  }
+  .job-list{
+    .form-group{
+
+      @include responsive_mobile(){
+        border-bottom: none;
+      }
+      .input{
+        color: $label-gray;
+      }
+    }
+    .box{
+      padding: 1rem;
+      background-color: $primary-white;
+      -webkit-box-shadow: 0px 4px 7px -1px rgba(0,0,0,0.54);
+      -moz-box-shadow: 0px 4px 7px -1px rgba(0,0,0,0.54);
+      box-shadow: 0px 4px 7px -1px rgba(0,0,0,0.54);
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      width: 100%;
+    }
+    .box-title{
+      font-size: 20px;
+    }
+    .ex-title{
+      font-size: 12px;
+    }
+    .comp-name{
+    display: inline-block;
+    padding-left: 10px;
+    position: relative;
+    top: -9px;
+    font-size: 14px;
+    }
+    .company-logo {
+      width: 120px;
+      height: 30px;
+    }
+    .box-info{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+   }
+    .no-margin{
+      margin: 0 !important;
+    }
+    .margin-auto{
+      margin: 0 auto;
+    }
+  }
+  .job-search{
+    .box-body{
+      padding: 0;
+    }
+    .box-title{
+      padding: 0 1.25rem;
+    }
+    
+  }
+  .section-job-anouncement{
+    .no-margin{
+      @include responsive_mobile(){
+        margin: 0;
+      }
+    }
+    .mbottom-40{
+      @include responsive_mobile(){
+        margin-bottom: 1rem;
+      }
+    }
+    .box-body{
+      margin: 1rem 0;
+      @include responsive_mobile(){
+       margin: 1rem 0;
+      }
+    }
+    .box-arrow{
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      margin-top: -9px;
+    }
+  
+    .column-4, .column-8{
+      @include responsive_mobile(){
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    
+    .job-search{
+      &.mright-20{
+        @include responsive_mobile(){
+          margin-right: 0 !important;
+  
+        }
+      }
+    }
+    .job-search-wrapper{
+      @include responsive_mobile(){
+       background-color: $primary-white;
+      }
+  
+    }
+    .text-right{
+      @include responsive_mobile(){
+        margin-top: 5px;
+      }
+      .box-date{
+        @include responsive_mobile(){
+         line-height: 15px;
+        }
+      }
+    }
+    .jobs-num{
+      line-height: 56px;
+      @include responsive_mobile(){
+        line-height: 56px;
+      }
+    }
+  }
